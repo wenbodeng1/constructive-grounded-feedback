@@ -1,6 +1,4 @@
-<p align="center">
-  <img src="assets/banner.svg" alt="Constructive Grounded Feedback — check, suggest, revise" width="100%"/>
-</p>
+<h1 align="center">Constructive Grounded Feedback for Small LM Agents on Constraint-Rich Long Tasks</h1>
 
 <p align="center">
   <img alt="ISCAS 2027 submission" src="https://img.shields.io/badge/ISCAS%202027-submission-ff8fb1?style=for-the-badge"/>
@@ -40,14 +38,10 @@
 ## 🍬 How CGF works
 
 <p align="center">
-  <img src="assets/stickers/check.svg" width="150" alt="check sticker"/>
-  &nbsp;➡️&nbsp;
-  <img src="assets/stickers/suggest.svg" width="150" alt="suggest sticker"/>
-  &nbsp;➡️&nbsp;
-  <img src="assets/stickers/revise.svg" width="150" alt="revise sticker"/>
-  &nbsp;🔁&nbsp;
-  <img src="assets/stickers/training-free.svg" width="150" alt="no training sticker"/>
+  <img src="assets/figures/fig1_overview.png" width="100%" alt="Fig. 1: delivery protocols and the CGF loop"/>
 </p>
+
+<p align="center"><sub><b>Fig. 1.</b> Overview. (a) Direct, staged and feedback-gated staged delivery of the same task information (stages: days of an itinerary, friends of a meeting schedule, cities of a trip). (b) The CGF loop: a grounded checker reports violations, a suggester returns filtered, cost-ranked feasible replacements, and the LM revises; without S, the loop provides violation-only feedback on a direct draft (Direct+Check, abbreviated as +Check); with S, it provides CGF (Direct+CGF, abbreviated as +CGF). Applying CGF after every stage yields FGS+CGF.</sub></p>
 
 A task is a request **q** plus reference data **R** from the environment (flights, trains, restaurants, attractions, hotels, distances, calendars…). The checker **C**, the suggester **S** and the LM reviser **M** all see the same **q** and **R**.
 
@@ -97,6 +91,12 @@ Strict success (%) on TravelPlanner and NATURAL PLAN, commonsense micro pass rat
 - 🎲 Random candidates (`+CGF, unranked`) stay near +Check on TravelPlanner and fall below it on calendar scheduling, so the gain comes from **filtering and ranking**.
 - 🪜 Gating every stage with CGF (FGS+CGF) helps on some settings and hurts on others, at 9.6–14.0 instead of 2.9–4.0 model calls per task.
 
+<p align="center">
+  <img src="assets/figures/fig2_tp_failures.png" width="80%" alt="Fig. 2: TravelPlanner plans failing each constraint"/>
+</p>
+
+<p align="center"><sub><b>Fig. 2.</b> TravelPlanner plans (of 180) failing each constraint (Qwen3.5-9B): delivery without feedback (Direct, Staged, Staged+Ledger) and feedback on a direct draft (+Check; +CGF, unranked; +CGF). Staging fixes route errors but multiplies cross-stage repetition failures, which the ledger markedly mitigates; CGF removes nearly all minimum-stay and most budget failures left by +Check.</sub></p>
+
 ---
 
 ## 🗂️ Repository map
@@ -124,7 +124,7 @@ constructive-grounded-feedback/
 ├── 📦 results/
 │   ├── aggregate.json         all numbers reported in the paper
 │   └── runs.tar.xz            every plan, log and score behind them
-└── 🎨 assets/                 banner + stickers
+└── 🖼️ assets/figures/         Fig. 1 and Fig. 2 from the paper
 ```
 
 ---
