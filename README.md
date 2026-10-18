@@ -216,13 +216,6 @@ python analysis/gen_tables.py results/aggregate.json tables/            # 📋 L
 
 ---
 
-## 🚧 Limitations
-
-- 🧱 The checkers cover hard feasibility constraints only (not soft preferences or ChinaTravel's request-specific constraints), and each one is written for its environment's data schema.
-- 🏯 ChinaTravel runs tool-free on a fixed subset of points of interest.
-- 🎯 All runs use greedy decoding.
-
----
 
 ## 📝 Citation
 
