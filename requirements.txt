@@ -1,0 +1,9 @@
+# core (runners, checkers, scoring, analysis)
+datasets
+pandas
+matplotlib
+absl-py
+# optional: token statistics of the ChinaTravel reference blocks (ct/ct_tokstats.py)
+transformers
+# serving: install vLLM in its own environment, see README
+# benchmarks: also install the requirements of TravelPlanner and ChinaTravel from third_party/

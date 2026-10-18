@@ -1,0 +1,1644 @@
+{
+ "np": {
+  "q35/calendar/direct": {
+   "n": 1000,
+   "acc": 34.6,
+   "calls": 1.0,
+   "ktok": 3.5,
+   "errors": 0
+  },
+  "q35/calendar/check": {
+   "n": 1000,
+   "acc": 82.6,
+   "calls": 1.66,
+   "ktok": 6.5,
+   "errors": 0
+  },
+  "q35/calendar/cgf": {
+   "n": 1000,
+   "acc": 82.7,
+   "calls": 1.56,
+   "ktok": 5.9,
+   "errors": 0
+  },
+  "q35/calendar/cgf_unranked": {
+   "n": 1000,
+   "acc": 61.5,
+   "calls": 2.21,
+   "ktok": 9.6,
+   "errors": 0
+  },
+  "q35/meeting/direct": {
+   "n": 1000,
+   "acc": 22.3,
+   "calls": 1.0,
+   "ktok": 7.0,
+   "errors": 0
+  },
+  "q35/meeting/check": {
+   "n": 1000,
+   "acc": 45.6,
+   "calls": 2.9,
+   "ktok": 24.4,
+   "errors": 0
+  },
+  "q35/meeting/cgf": {
+   "n": 1000,
+   "acc": 47.3,
+   "calls": 2.91,
+   "ktok": 25.0,
+   "errors": 0
+  },
+  "q35/meeting/cgf_unranked": {
+   "n": 1000,
+   "acc": 47.3,
+   "calls": 2.9,
+   "ktok": 24.9,
+   "errors": 0
+  },
+  "q35/meeting/staged": {
+   "n": 1000,
+   "acc": 11.4,
+   "calls": 6.66,
+   "ktok": 51.5,
+   "errors": 26
+  },
+  "q35/meeting/fgs_cgf": {
+   "n": 1000,
+   "acc": 43.9,
+   "calls": 10.53,
+   "ktok": 85.9,
+   "errors": 29
+  },
+  "q35/trip/direct": {
+   "n": 1600,
+   "acc": 21.5,
+   "calls": 1.0,
+   "ktok": 3.7,
+   "errors": 0
+  },
+  "q35/trip/check": {
+   "n": 1600,
+   "acc": 37.0,
+   "calls": 3.01,
+   "ktok": 15.4,
+   "errors": 0
+  },
+  "q35/trip/cgf": {
+   "n": 1600,
+   "acc": 39.31,
+   "calls": 2.96,
+   "ktok": 15.1,
+   "errors": 0
+  },
+  "q35/trip/cgf_unranked": {
+   "n": 1600,
+   "acc": 38.38,
+   "calls": 2.97,
+   "ktok": 15.4,
+   "errors": 0
+  },
+  "q35/trip/staged": {
+   "n": 1600,
+   "acc": 4.44,
+   "calls": 7.5,
+   "ktok": 22.2,
+   "errors": 0
+  },
+  "q35/trip/fgs_cgf": {
+   "n": 1600,
+   "acc": 36.62,
+   "calls": 11.89,
+   "ktok": 40.0,
+   "errors": 0
+  },
+  "qvl/calendar/direct": {
+   "n": 1000,
+   "acc": 26.8,
+   "calls": 1.0,
+   "ktok": 3.7,
+   "errors": 0
+  },
+  "qvl/calendar/check": {
+   "n": 1000,
+   "acc": 69.2,
+   "calls": 2.03,
+   "ktok": 8.7,
+   "errors": 0
+  },
+  "qvl/calendar/cgf": {
+   "n": 1000,
+   "acc": 76.0,
+   "calls": 1.64,
+   "ktok": 6.9,
+   "errors": 0
+  },
+  "qvl/calendar/cgf_unranked": {
+   "n": 1000,
+   "acc": 55.4,
+   "calls": 2.37,
+   "ktok": 11.2,
+   "errors": 0
+  },
+  "qvl/meeting/direct": {
+   "n": 1000,
+   "acc": 21.0,
+   "calls": 1.0,
+   "ktok": 6.3,
+   "errors": 0
+  },
+  "qvl/meeting/check": {
+   "n": 1000,
+   "acc": 35.2,
+   "calls": 3.16,
+   "ktok": 24.3,
+   "errors": 0
+  },
+  "qvl/meeting/cgf": {
+   "n": 1000,
+   "acc": 35.9,
+   "calls": 3.15,
+   "ktok": 24.6,
+   "errors": 0
+  },
+  "qvl/meeting/cgf_unranked": {
+   "n": 1000,
+   "acc": 36.1,
+   "calls": 3.14,
+   "ktok": 24.6,
+   "errors": 0
+  },
+  "qvl/meeting/staged": {
+   "n": 1000,
+   "acc": 18.9,
+   "calls": 6.41,
+   "ktok": 48.9,
+   "errors": 4
+  },
+  "qvl/meeting/fgs_cgf": {
+   "n": 1000,
+   "acc": 42.6,
+   "calls": 10.9,
+   "ktok": 86.0,
+   "errors": 3
+  },
+  "qvl/trip/direct": {
+   "n": 1600,
+   "acc": 19.0,
+   "calls": 1.0,
+   "ktok": 3.9,
+   "errors": 0
+  },
+  "qvl/trip/check": {
+   "n": 1600,
+   "acc": 25.38,
+   "calls": 3.29,
+   "ktok": 18.4,
+   "errors": 0
+  },
+  "qvl/trip/cgf": {
+   "n": 1600,
+   "acc": 26.0,
+   "calls": 3.29,
+   "ktok": 18.9,
+   "errors": 0
+  },
+  "qvl/trip/cgf_unranked": {
+   "n": 1600,
+   "acc": 26.62,
+   "calls": 3.27,
+   "ktok": 18.6,
+   "errors": 0
+  },
+  "qvl/trip/staged": {
+   "n": 1600,
+   "acc": 4.75,
+   "calls": 7.53,
+   "ktok": 21.6,
+   "errors": 1
+  },
+  "qvl/trip/fgs_cgf": {
+   "n": 1600,
+   "acc": 26.88,
+   "calls": 11.69,
+   "ktok": 38.4,
+   "errors": 2
+  },
+  "hermes/calendar/direct": {
+   "n": 1000,
+   "acc": 17.4,
+   "calls": 1.0,
+   "ktok": 1.8,
+   "errors": 0
+  },
+  "hermes/calendar/check": {
+   "n": 1000,
+   "acc": 28.1,
+   "calls": 3.07,
+   "ktok": 6.1,
+   "errors": 0
+  },
+  "hermes/calendar/cgf": {
+   "n": 1000,
+   "acc": 61.8,
+   "calls": 1.83,
+   "ktok": 3.5,
+   "errors": 0
+  },
+  "hermes/calendar/cgf_unranked": {
+   "n": 1000,
+   "acc": 23.4,
+   "calls": 3.06,
+   "ktok": 6.0,
+   "errors": 0
+  },
+  "hermes/meeting/direct": {
+   "n": 1000,
+   "acc": 14.2,
+   "calls": 1.0,
+   "ktok": 5.6,
+   "errors": 0
+  },
+  "hermes/meeting/check": {
+   "n": 1000,
+   "acc": 21.2,
+   "calls": 3.46,
+   "ktok": 22.2,
+   "errors": 0
+  },
+  "hermes/meeting/cgf": {
+   "n": 1000,
+   "acc": 21.5,
+   "calls": 3.46,
+   "ktok": 22.5,
+   "errors": 0
+  },
+  "hermes/meeting/cgf_unranked": {
+   "n": 1000,
+   "acc": 22.4,
+   "calls": 3.47,
+   "ktok": 22.5,
+   "errors": 0
+  },
+  "hermes/meeting/staged": {
+   "n": 1000,
+   "acc": 8.3,
+   "calls": 6.38,
+   "ktok": 41.3,
+   "errors": 1
+  },
+  "hermes/meeting/fgs_cgf": {
+   "n": 1000,
+   "acc": 33.4,
+   "calls": 10.71,
+   "ktok": 75.3,
+   "errors": 1
+  },
+  "hermes/trip/direct": {
+   "n": 1600,
+   "acc": 11.62,
+   "calls": 1.0,
+   "ktok": 2.6,
+   "errors": 0
+  },
+  "hermes/trip/check": {
+   "n": 1600,
+   "acc": 15.62,
+   "calls": 3.55,
+   "ktok": 10.6,
+   "errors": 0
+  },
+  "hermes/trip/cgf": {
+   "n": 1600,
+   "acc": 17.0,
+   "calls": 3.53,
+   "ktok": 10.8,
+   "errors": 0
+  },
+  "hermes/trip/cgf_unranked": {
+   "n": 1600,
+   "acc": 14.94,
+   "calls": 3.55,
+   "ktok": 11.0,
+   "errors": 0
+  },
+  "hermes/trip/staged": {
+   "n": 1600,
+   "acc": 4.19,
+   "calls": 7.51,
+   "ktok": 20.9,
+   "errors": 2
+  },
+  "hermes/trip/fgs_cgf": {
+   "n": 1600,
+   "acc": 18.62,
+   "calls": 12.25,
+   "ktok": 35.1,
+   "errors": 3
+  }
+ },
+ "tp": {
+  "q35/direct": {
+   "final": 2.22,
+   "cs_macro": 12.78,
+   "hard_macro": 18.89,
+   "cs_micro": 79.38,
+   "hard_micro": 42.86,
+   "delivery": 100.0,
+   "crash": 0,
+   "fails": {
+    "is_valid_accommodation": 120,
+    "valid_cost": 83,
+    "is_valid_transportation": 57,
+    "is_valid_restaurants": 44,
+    "is_valid_information_in_sandbox": 43,
+    "valid_room_rule": 37,
+    "is_reasonable_visiting_city": 25,
+    "valid_room_type": 13,
+    "valid_cuisine": 10,
+    "is_valid_information_in_current_city": 6,
+    "valid_transportation": 4,
+    "is_not_absent": 2
+   },
+   "calls": 1.0,
+   "ktok": 8
+  },
+  "q35/staged": {
+   "final": 2.22,
+   "cs_macro": 6.67,
+   "hard_macro": 21.67,
+   "cs_micro": 70.14,
+   "hard_micro": 42.62,
+   "delivery": 100.0,
+   "crash": 0,
+   "fails": {
+    "is_valid_restaurants": 136,
+    "is_valid_accommodation": 113,
+    "valid_cost": 74,
+    "is_valid_attractions": 63,
+    "is_valid_transportation": 57,
+    "is_valid_information_in_sandbox": 45,
+    "valid_room_rule": 30,
+    "valid_cuisine": 13,
+    "valid_room_type": 13,
+    "is_valid_information_in_current_city": 10,
+    "is_reasonable_visiting_city": 6,
+    "valid_transportation": 4
+   },
+   "calls": 6.0,
+   "ktok": 54
+  },
+  "q35/staged_ledger": {
+   "final": 1.67,
+   "cs_macro": 16.67,
+   "hard_macro": 16.67,
+   "cs_micro": 79.79,
+   "hard_micro": 38.1,
+   "delivery": 100.0,
+   "crash": 0,
+   "fails": {
+    "is_valid_accommodation": 116,
+    "valid_cost": 81,
+    "is_valid_transportation": 57,
+    "is_valid_information_in_sandbox": 51,
+    "is_valid_restaurants": 36,
+    "valid_room_rule": 30,
+    "is_valid_information_in_current_city": 20,
+    "valid_room_type": 12,
+    "valid_cuisine": 10,
+    "is_reasonable_visiting_city": 7,
+    "valid_transportation": 6,
+    "is_valid_attractions": 4
+   },
+   "calls": 6.0,
+   "ktok": 55
+  },
+  "q35/direct_repair": {
+   "final": 8.89,
+   "cs_macro": 41.11,
+   "hard_macro": 27.78,
+   "cs_micro": 88.19,
+   "hard_micro": 53.33,
+   "delivery": 100.0,
+   "crash": 0,
+   "fails": {
+    "valid_cost": 83,
+    "is_valid_accommodation": 62,
+    "is_valid_transportation": 46,
+    "valid_room_rule": 37,
+    "is_reasonable_visiting_city": 26,
+    "valid_room_type": 20,
+    "is_valid_information_in_sandbox": 18,
+    "is_valid_information_in_current_city": 9,
+    "valid_cuisine": 9,
+    "is_valid_restaurants": 5,
+    "is_not_absent": 4,
+    "valid_transportation": 1
+   },
+   "calls": 3.71,
+   "ktok": 32
+  },
+  "q35/staged_ledger_repair": {
+   "final": 6.67,
+   "cs_macro": 41.67,
+   "hard_macro": 26.67,
+   "cs_micro": 89.24,
+   "hard_micro": 52.62,
+   "delivery": 100.0,
+   "crash": 0,
+   "fails": {
+    "valid_cost": 88,
+    "is_valid_accommodation": 55,
+    "is_valid_transportation": 49,
+    "valid_room_rule": 40,
+    "valid_room_type": 26,
+    "is_valid_information_in_current_city": 20,
+    "is_valid_information_in_sandbox": 17,
+    "is_reasonable_visiting_city": 12,
+    "valid_cuisine": 11,
+    "is_valid_restaurants": 2,
+    "valid_transportation": 2
+   },
+   "calls": 8.73,
+   "ktok": 79
+  },
+  "q35/staged_verified": {
+   "final": 8.89,
+   "cs_macro": 40.56,
+   "hard_macro": 30.0,
+   "cs_micro": 88.61,
+   "hard_micro": 55.24,
+   "delivery": 100.0,
+   "crash": 0,
+   "fails": {
+    "valid_cost": 85,
+    "is_valid_accommodation": 62,
+    "is_valid_transportation": 47,
+    "valid_room_rule": 42,
+    "valid_room_type": 28,
+    "is_reasonable_visiting_city": 25,
+    "is_valid_information_in_current_city": 19,
+    "is_valid_information_in_sandbox": 10,
+    "valid_cuisine": 9,
+    "valid_transportation": 4,
+    "is_not_absent": 1
+   },
+   "calls": 12.82,
+   "ktok": 119
+  },
+  "q35/direct_cgf": {
+   "final": 25.0,
+   "cs_macro": 52.22,
+   "hard_macro": 38.89,
+   "cs_micro": 91.94,
+   "hard_micro": 59.76,
+   "delivery": 100.0,
+   "crash": 0,
+   "fails": {
+    "is_valid_transportation": 48,
+    "is_valid_information_in_sandbox": 35,
+    "valid_room_rule": 35,
+    "valid_cost": 30,
+    "is_reasonable_visiting_city": 23,
+    "valid_room_type": 18,
+    "is_valid_information_in_current_city": 7,
+    "valid_transportation": 5,
+    "is_not_absent": 2,
+    "valid_cuisine": 2,
+    "is_valid_accommodation": 1
+   },
+   "calls": 3.06,
+   "ktok": 28
+  },
+  "q35/direct_cgf_unranked": {
+   "final": 7.78,
+   "cs_macro": 38.89,
+   "hard_macro": 23.89,
+   "cs_micro": 87.57,
+   "hard_micro": 48.81,
+   "delivery": 100.0,
+   "crash": 0,
+   "fails": {
+    "valid_cost": 76,
+    "is_valid_accommodation": 54,
+    "is_valid_transportation": 53,
+    "is_valid_information_in_sandbox": 33,
+    "valid_room_rule": 31,
+    "is_reasonable_visiting_city": 24,
+    "valid_room_type": 20,
+    "is_valid_information_in_current_city": 8,
+    "valid_transportation": 7,
+    "valid_cuisine": 6,
+    "is_valid_restaurants": 5,
+    "is_not_absent": 2
+   },
+   "calls": 3.71,
+   "ktok": 35
+  },
+  "q35/staged_verified_cgf": {
+   "final": 25.0,
+   "cs_macro": 54.44,
+   "hard_macro": 40.0,
+   "cs_micro": 92.71,
+   "hard_micro": 60.48,
+   "delivery": 100.0,
+   "crash": 0,
+   "fails": {
+    "is_valid_transportation": 49,
+    "valid_cost": 33,
+    "is_valid_information_in_sandbox": 33,
+    "valid_room_rule": 31,
+    "valid_room_type": 17,
+    "is_valid_information_in_current_city": 13,
+    "is_reasonable_visiting_city": 7,
+    "valid_cuisine": 6,
+    "valid_transportation": 4,
+    "is_valid_accommodation": 3
+   },
+   "calls": 11.42,
+   "ktok": 109
+  },
+  "qvl/direct": {
+   "final": 1.67,
+   "cs_macro": 6.11,
+   "hard_macro": 13.33,
+   "cs_micro": 77.22,
+   "hard_micro": 29.52,
+   "delivery": 100.0,
+   "crash": 0,
+   "fails": {
+    "is_valid_accommodation": 109,
+    "is_valid_restaurants": 88,
+    "is_valid_information_in_sandbox": 78,
+    "valid_cost": 70,
+    "is_valid_transportation": 30,
+    "valid_room_rule": 27,
+    "is_valid_information_in_current_city": 13,
+    "valid_room_type": 9,
+    "is_valid_attractions": 8,
+    "valid_cuisine": 6,
+    "is_not_absent": 1,
+    "is_reasonable_visiting_city": 1,
+    "valid_transportation": 1
+   },
+   "calls": 1.0,
+   "ktok": 8
+  },
+  "qvl/staged": {
+   "final": 0.0,
+   "cs_macro": 1.11,
+   "hard_macro": 10.0,
+   "cs_micro": 63.68,
+   "hard_micro": 23.33,
+   "delivery": 100.0,
+   "crash": 0,
+   "fails": {
+    "is_valid_restaurants": 167,
+    "is_valid_accommodation": 96,
+    "is_valid_attractions": 96,
+    "is_valid_information_in_sandbox": 92,
+    "valid_cost": 56,
+    "is_valid_transportation": 35,
+    "is_valid_information_in_current_city": 29,
+    "valid_room_rule": 19,
+    "valid_room_type": 8,
+    "valid_cuisine": 7,
+    "is_not_absent": 6,
+    "is_reasonable_visiting_city": 2,
+    "valid_transportation": 1
+   },
+   "calls": 6.0,
+   "ktok": 54
+  },
+  "qvl/direct_repair": {
+   "final": 9.44,
+   "cs_macro": 42.78,
+   "hard_macro": 22.22,
+   "cs_micro": 88.47,
+   "hard_micro": 40.0,
+   "delivery": 100.0,
+   "crash": 0,
+   "fails": {
+    "valid_cost": 78,
+    "is_valid_accommodation": 60,
+    "is_valid_information_in_sandbox": 47,
+    "valid_room_rule": 30,
+    "is_valid_transportation": 23,
+    "is_valid_information_in_current_city": 19,
+    "is_valid_restaurants": 14,
+    "valid_room_type": 13,
+    "valid_cuisine": 8,
+    "is_valid_attractions": 2,
+    "is_not_absent": 1
+   },
+   "calls": 3.74,
+   "ktok": 33
+  },
+  "qvl/direct_cgf": {
+   "final": 32.22,
+   "cs_macro": 59.44,
+   "hard_macro": 42.78,
+   "cs_micro": 93.54,
+   "hard_micro": 57.14,
+   "delivery": 100.0,
+   "crash": 0,
+   "fails": {
+    "is_valid_information_in_sandbox": 40,
+    "is_valid_transportation": 24,
+    "valid_cost": 24,
+    "valid_room_rule": 23,
+    "is_valid_information_in_current_city": 21,
+    "valid_room_type": 21,
+    "valid_cuisine": 9,
+    "is_valid_restaurants": 3,
+    "is_valid_attractions": 2,
+    "is_valid_accommodation": 1,
+    "is_not_absent": 1,
+    "is_reasonable_visiting_city": 1
+   },
+   "calls": 2.88,
+   "ktok": 27
+  },
+  "qvl/direct_cgf_unranked": {
+   "final": 12.22,
+   "cs_macro": 40.0,
+   "hard_macro": 28.89,
+   "cs_micro": 89.58,
+   "hard_micro": 46.67,
+   "delivery": 100.0,
+   "crash": 0,
+   "fails": {
+    "valid_cost": 65,
+    "is_valid_accommodation": 50,
+    "is_valid_information_in_sandbox": 40,
+    "valid_room_rule": 30,
+    "is_valid_information_in_current_city": 27,
+    "is_valid_transportation": 24,
+    "valid_room_type": 17,
+    "valid_cuisine": 8,
+    "is_valid_restaurants": 6,
+    "is_valid_attractions": 2,
+    "is_not_absent": 1
+   },
+   "calls": 3.67,
+   "ktok": 35
+  },
+  "qvl/staged_verified_cgf": {
+   "final": 33.33,
+   "cs_macro": 58.33,
+   "hard_macro": 42.22,
+   "cs_micro": 93.61,
+   "hard_micro": 54.52,
+   "delivery": 100.0,
+   "crash": 0,
+   "fails": {
+    "is_valid_information_in_sandbox": 40,
+    "valid_room_rule": 23,
+    "is_valid_transportation": 21,
+    "valid_cost": 17,
+    "is_valid_information_in_current_city": 17,
+    "valid_room_type": 16,
+    "is_not_absent": 10,
+    "valid_cuisine": 8,
+    "is_reasonable_visiting_city": 2,
+    "is_valid_accommodation": 2
+   },
+   "calls": 10.09,
+   "ktok": 96
+  },
+  "hermes/direct": {
+   "final": 0.0,
+   "cs_macro": 0.0,
+   "hard_macro": 0.0,
+   "cs_micro": 47.15,
+   "hard_micro": 1.67,
+   "delivery": 97.22,
+   "crash": 5,
+   "fails": {
+    "is_valid_information_in_sandbox": 166,
+    "is_valid_accommodation": 114,
+    "is_valid_information_in_current_city": 114,
+    "is_reasonable_visiting_city": 107,
+    "is_valid_restaurants": 92,
+    "is_valid_transportation": 60,
+    "is_not_absent": 54,
+    "is_valid_attractions": 14,
+    "valid_cost": 8,
+    "valid_room_type": 1,
+    "valid_room_rule": 1,
+    "valid_cuisine": 1
+   },
+   "calls": 1.0,
+   "ktok": 7
+  },
+  "hermes/staged": {
+   "final": 0.0,
+   "cs_macro": 0.0,
+   "hard_macro": 0.56,
+   "cs_micro": 44.31,
+   "hard_micro": 1.9,
+   "delivery": 97.22,
+   "crash": 5,
+   "fails": {
+    "is_valid_information_in_sandbox": 168,
+    "is_valid_restaurants": 127,
+    "is_valid_information_in_current_city": 111,
+    "is_valid_accommodation": 98,
+    "is_reasonable_visiting_city": 89,
+    "is_not_absent": 65,
+    "is_valid_transportation": 55,
+    "is_valid_attractions": 49,
+    "valid_cost": 4,
+    "valid_room_type": 2,
+    "valid_cuisine": 1,
+    "valid_room_rule": 1
+   },
+   "calls": 6.0,
+   "ktok": 46
+  },
+  "hermes/direct_repair": {
+   "final": 0.0,
+   "cs_macro": 2.78,
+   "hard_macro": 0.56,
+   "cs_micro": 48.96,
+   "hard_micro": 6.43,
+   "delivery": 96.67,
+   "crash": 6,
+   "fails": {
+    "is_valid_information_in_sandbox": 142,
+    "is_valid_information_in_current_city": 132,
+    "is_reasonable_visiting_city": 111,
+    "is_valid_accommodation": 110,
+    "is_valid_restaurants": 79,
+    "is_valid_transportation": 54,
+    "is_not_absent": 51,
+    "valid_cost": 26,
+    "is_valid_attractions": 8,
+    "valid_room_rule": 5,
+    "valid_room_type": 4,
+    "valid_cuisine": 2
+   },
+   "calls": 4.0,
+   "ktok": 31
+  },
+  "hermes/direct_cgf": {
+   "final": 6.67,
+   "cs_macro": 15.0,
+   "hard_macro": 10.56,
+   "cs_micro": 59.86,
+   "hard_micro": 16.19,
+   "delivery": 97.78,
+   "crash": 4,
+   "fails": {
+    "is_valid_information_in_current_city": 131,
+    "is_valid_information_in_sandbox": 122,
+    "is_reasonable_visiting_city": 109,
+    "is_valid_accommodation": 65,
+    "is_valid_transportation": 57,
+    "is_not_absent": 41,
+    "valid_cost": 25,
+    "is_valid_restaurants": 21,
+    "valid_room_rule": 11,
+    "valid_room_type": 7,
+    "valid_cuisine": 4
+   },
+   "calls": 3.79,
+   "ktok": 33
+  },
+  "hermes/direct_cgf_unranked": {
+   "final": 0.56,
+   "cs_macro": 4.44,
+   "hard_macro": 3.33,
+   "cs_micro": 52.43,
+   "hard_micro": 10.71,
+   "delivery": 96.67,
+   "crash": 6,
+   "fails": {
+    "is_valid_information_in_current_city": 138,
+    "is_valid_accommodation": 129,
+    "is_valid_information_in_sandbox": 116,
+    "is_reasonable_visiting_city": 105,
+    "is_valid_transportation": 62,
+    "valid_cost": 45,
+    "is_valid_restaurants": 43,
+    "is_not_absent": 42,
+    "valid_cuisine": 7,
+    "valid_room_rule": 5,
+    "valid_room_type": 5,
+    "is_valid_attractions": 2,
+    "valid_transportation": 2
+   },
+   "calls": 3.99,
+   "ktok": 34
+  },
+  "hermes/staged_verified_cgf": {
+   "final": 7.78,
+   "cs_macro": 17.78,
+   "hard_macro": 20.0,
+   "cs_micro": 70.97,
+   "hard_micro": 27.38,
+   "delivery": 97.78,
+   "crash": 4,
+   "fails": {
+    "is_valid_information_in_current_city": 122,
+    "is_reasonable_visiting_city": 92,
+    "is_valid_information_in_sandbox": 78,
+    "is_valid_transportation": 44,
+    "valid_cost": 37,
+    "is_not_absent": 26,
+    "is_valid_accommodation": 21,
+    "valid_room_rule": 17,
+    "valid_room_type": 15,
+    "valid_cuisine": 11,
+    "is_valid_restaurants": 3,
+    "valid_transportation": 1
+   },
+   "calls": 13.96,
+   "ktok": 117
+  }
+ },
+ "pooled": {
+  "TravelPlanner/q35": {
+   "n": 180,
+   "check": 8.89,
+   "cgf": 25.0,
+   "b": 3,
+   "c": 32,
+   "p": 4.176981747150421e-07
+  },
+  "calendar/q35": {
+   "n": 1000,
+   "check": 82.6,
+   "cgf": 82.7,
+   "b": 33,
+   "c": 34,
+   "p": 1.0
+  },
+  "meeting/q35": {
+   "n": 1000,
+   "check": 45.6,
+   "cgf": 47.3,
+   "b": 50,
+   "c": 67,
+   "p": 0.13875316894302558
+  },
+  "trip/q35": {
+   "n": 1600,
+   "check": 37.0,
+   "cgf": 39.31,
+   "b": 72,
+   "c": 109,
+   "p": 0.007284418097174131
+  },
+  "TravelPlanner/qvl": {
+   "n": 180,
+   "check": 9.44,
+   "cgf": 32.22,
+   "b": 1,
+   "c": 42,
+   "p": 1.000444171950221e-11
+  },
+  "calendar/qvl": {
+   "n": 1000,
+   "check": 69.2,
+   "cgf": 76.0,
+   "b": 57,
+   "c": 125,
+   "p": 5.086603249122868e-07
+  },
+  "meeting/qvl": {
+   "n": 1000,
+   "check": 35.2,
+   "cgf": 35.9,
+   "b": 26,
+   "c": 33,
+   "p": 0.4349928051221534
+  },
+  "trip/qvl": {
+   "n": 1600,
+   "check": 25.38,
+   "cgf": 26.0,
+   "b": 57,
+   "c": 67,
+   "p": 0.4190737425166353
+  },
+  "TravelPlanner/hermes": {
+   "n": 180,
+   "check": 0.0,
+   "cgf": 6.67,
+   "b": 0,
+   "c": 12,
+   "p": 0.00048828125
+  },
+  "calendar/hermes": {
+   "n": 1000,
+   "check": 28.1,
+   "cgf": 61.8,
+   "b": 43,
+   "c": 380,
+   "p": 1.6174771141566846e-68
+  },
+  "meeting/hermes": {
+   "n": 1000,
+   "check": 21.2,
+   "cgf": 21.5,
+   "b": 21,
+   "c": 24,
+   "p": 0.765991824244793
+  },
+  "trip/hermes": {
+   "n": 1600,
+   "check": 15.62,
+   "cgf": 17.0,
+   "b": 18,
+   "c": 40,
+   "p": 0.005354859650800292
+  },
+  "_pooled": {
+   "n": 11340,
+   "b": 381,
+   "c": 965,
+   "p": 1.0180955499722536e-58,
+   "settings": 12,
+   "positive": 12
+  }
+ },
+ "ct": {
+  "q35/direct": {
+   "eval_n": 100,
+   "eval_schema_pass_rate": 99.0,
+   "eval_commonsense_micro": 78.14814814814814,
+   "eval_commonsense_macro": 0.0,
+   "eval_hard_micro": 73.52727272727273,
+   "eval_hard_macro": 1.0,
+   "eval_hard_conditional_micro": 0.0,
+   "eval_hard_conditional_macro": 0.0,
+   "eval_final_pass_rate": 0.0,
+   "eval_tpc_DAV": 0.0,
+   "eval_tpc_ATT": 0.0,
+   "eval_tpc_DDR": 0.0,
+   "eval_tpc_overall": 7.814814814814814,
+   "method": "direct",
+   "model": "np-qwen35-9b",
+   "n": 100,
+   "seconds": 1754,
+   "errors": 1,
+   "calls": 100,
+   "prompt": 1455078,
+   "completion": 115554
+  },
+  "q35/staged": {
+   "eval_n": 100,
+   "eval_schema_pass_rate": 93.0,
+   "eval_commonsense_micro": 71.88888888888889,
+   "eval_commonsense_macro": 0.0,
+   "eval_hard_micro": 68.72727272727272,
+   "eval_hard_macro": 1.0,
+   "eval_hard_conditional_micro": 0.0,
+   "eval_hard_conditional_macro": 0.0,
+   "eval_final_pass_rate": 0.0,
+   "eval_tpc_DAV": 0.0,
+   "eval_tpc_ATT": 0.0,
+   "eval_tpc_DDR": 0.0,
+   "eval_tpc_overall": 7.188888888888889,
+   "method": "staged",
+   "model": "np-qwen35-9b",
+   "n": 100,
+   "seconds": 3843,
+   "errors": 7,
+   "calls": 398,
+   "prompt": 5961199,
+   "completion": 152750
+  },
+  "q35/check": {
+   "eval_n": 100,
+   "eval_schema_pass_rate": 97.0,
+   "eval_commonsense_micro": 78.25925925925927,
+   "eval_commonsense_macro": 0.0,
+   "eval_hard_micro": 71.27272727272728,
+   "eval_hard_macro": 2.0,
+   "eval_hard_conditional_micro": 0.0,
+   "eval_hard_conditional_macro": 0.0,
+   "eval_final_pass_rate": 0.0,
+   "eval_tpc_DAV": 0.0,
+   "eval_tpc_ATT": 0.0,
+   "eval_tpc_DDR": 0.0,
+   "eval_tpc_overall": 7.825925925925927,
+   "method": "check",
+   "model": "np-qwen35-9b",
+   "n": 100,
+   "seconds": 6957,
+   "errors": 3,
+   "calls": 391,
+   "prompt": 6292000,
+   "completion": 447990
+  },
+  "q35/cgf": {
+   "eval_n": 100,
+   "eval_schema_pass_rate": 97.0,
+   "eval_commonsense_micro": 81.4074074074074,
+   "eval_commonsense_macro": 0.0,
+   "eval_hard_micro": 71.56363636363636,
+   "eval_hard_macro": 3.0,
+   "eval_hard_conditional_micro": 0.0,
+   "eval_hard_conditional_macro": 0.0,
+   "eval_final_pass_rate": 0.0,
+   "eval_tpc_DAV": 0.0,
+   "eval_tpc_ATT": 0.0,
+   "eval_tpc_DDR": 0.0,
+   "eval_tpc_overall": 8.14074074074074,
+   "method": "cgf",
+   "model": "np-qwen35-9b",
+   "n": 100,
+   "seconds": 6945,
+   "errors": 3,
+   "calls": 391,
+   "prompt": 6544162,
+   "completion": 450093
+  },
+  "q35/cgf_unranked": {
+   "eval_n": 100,
+   "eval_schema_pass_rate": 100.0,
+   "eval_commonsense_micro": 84.66666666666667,
+   "eval_commonsense_macro": 0.0,
+   "eval_hard_micro": 73.23636363636363,
+   "eval_hard_macro": 4.0,
+   "eval_hard_conditional_micro": 0.0,
+   "eval_hard_conditional_macro": 0.0,
+   "eval_final_pass_rate": 0.0,
+   "eval_tpc_DAV": 0.0,
+   "eval_tpc_ATT": 0.0,
+   "eval_tpc_DDR": 0.0,
+   "eval_tpc_overall": 8.466666666666667,
+   "method": "cgf_unranked",
+   "model": "np-qwen35-9b",
+   "n": 100,
+   "seconds": 6405,
+   "errors": 0,
+   "calls": 400,
+   "prompt": 6645373,
+   "completion": 448823
+  },
+  "q35/fgs_cgf": {
+   "eval_n": 100,
+   "eval_schema_pass_rate": 92.0,
+   "eval_commonsense_micro": 79.5925925925926,
+   "eval_commonsense_macro": 0.0,
+   "eval_hard_micro": 66.47272727272727,
+   "eval_hard_macro": 0.0,
+   "eval_hard_conditional_micro": 0.0,
+   "eval_hard_conditional_macro": 0.0,
+   "eval_final_pass_rate": 0.0,
+   "eval_tpc_DAV": 0.0,
+   "eval_tpc_ATT": 0.0,
+   "eval_tpc_DDR": 0.0,
+   "eval_tpc_overall": 7.95925925925926,
+   "method": "fgs_cgf",
+   "model": "np-qwen35-9b",
+   "n": 100,
+   "seconds": 11368,
+   "errors": 8,
+   "calls": 956,
+   "prompt": 15689321,
+   "completion": 621958
+  },
+  "qvl/direct": {
+   "eval_n": 100,
+   "eval_schema_pass_rate": 98.0,
+   "eval_commonsense_micro": 66.51851851851852,
+   "eval_commonsense_macro": 0.0,
+   "eval_hard_micro": 73.23636363636363,
+   "eval_hard_macro": 1.0,
+   "eval_hard_conditional_micro": 0.0,
+   "eval_hard_conditional_macro": 0.0,
+   "eval_final_pass_rate": 0.0,
+   "eval_tpc_DAV": 0.0,
+   "eval_tpc_ATT": 0.0,
+   "eval_tpc_DDR": 0.0,
+   "eval_tpc_overall": 6.651851851851852,
+   "method": "direct",
+   "model": "qwen3vl-8b",
+   "n": 100,
+   "seconds": 1298,
+   "errors": 2,
+   "calls": 100,
+   "prompt": 1453504,
+   "completion": 106357
+  },
+  "qvl/staged": {
+   "eval_n": 100,
+   "eval_schema_pass_rate": 97.0,
+   "eval_commonsense_micro": 71.62962962962963,
+   "eval_commonsense_macro": 0.0,
+   "eval_hard_micro": 71.85454545454546,
+   "eval_hard_macro": 2.0,
+   "eval_hard_conditional_micro": 0.0,
+   "eval_hard_conditional_macro": 0.0,
+   "eval_final_pass_rate": 0.0,
+   "eval_tpc_DAV": 0.0,
+   "eval_tpc_ATT": 0.0,
+   "eval_tpc_DDR": 0.0,
+   "eval_tpc_overall": 7.162962962962964,
+   "method": "staged",
+   "model": "qwen3vl-8b",
+   "n": 100,
+   "seconds": 2092,
+   "errors": 3,
+   "calls": 406,
+   "prompt": 6031767,
+   "completion": 108146
+  },
+  "qvl/check": {
+   "eval_n": 100,
+   "eval_schema_pass_rate": 99.0,
+   "eval_commonsense_micro": 68.11111111111111,
+   "eval_commonsense_macro": 0.0,
+   "eval_hard_micro": 73.38181818181818,
+   "eval_hard_macro": 2.0,
+   "eval_hard_conditional_micro": 0.0,
+   "eval_hard_conditional_macro": 0.0,
+   "eval_final_pass_rate": 0.0,
+   "eval_tpc_DAV": 0.0,
+   "eval_tpc_ATT": 0.0,
+   "eval_tpc_DDR": 0.0,
+   "eval_tpc_overall": 6.811111111111112,
+   "method": "check",
+   "model": "qwen3vl-8b",
+   "n": 100,
+   "seconds": 4237,
+   "errors": 1,
+   "calls": 394,
+   "prompt": 6253616,
+   "completion": 396217
+  },
+  "qvl/cgf": {
+   "eval_n": 100,
+   "eval_schema_pass_rate": 95.0,
+   "eval_commonsense_micro": 75.48148148148148,
+   "eval_commonsense_macro": 0.0,
+   "eval_hard_micro": 67.78181818181818,
+   "eval_hard_macro": 0.0,
+   "eval_hard_conditional_micro": 0.0,
+   "eval_hard_conditional_macro": 0.0,
+   "eval_final_pass_rate": 0.0,
+   "eval_tpc_DAV": 0.0,
+   "eval_tpc_ATT": 0.0,
+   "eval_tpc_DDR": 0.0,
+   "eval_tpc_overall": 7.548148148148148,
+   "method": "cgf",
+   "model": "qwen3vl-8b",
+   "n": 100,
+   "seconds": 3910,
+   "errors": 5,
+   "calls": 385,
+   "prompt": 6349086,
+   "completion": 397758
+  },
+  "qvl/cgf_unranked": {
+   "eval_n": 100,
+   "eval_schema_pass_rate": 99.0,
+   "eval_commonsense_micro": 77.14814814814814,
+   "eval_commonsense_macro": 0.0,
+   "eval_hard_micro": 71.34545454545454,
+   "eval_hard_macro": 0.0,
+   "eval_hard_conditional_micro": 0.0,
+   "eval_hard_conditional_macro": 0.0,
+   "eval_final_pass_rate": 0.0,
+   "eval_tpc_DAV": 0.0,
+   "eval_tpc_ATT": 0.0,
+   "eval_tpc_DDR": 0.0,
+   "eval_tpc_overall": 7.714814814814814,
+   "method": "cgf_unranked",
+   "model": "qwen3vl-8b",
+   "n": 100,
+   "seconds": 6406,
+   "errors": 1,
+   "calls": 395,
+   "prompt": 6469311,
+   "completion": 391188
+  },
+  "qvl/fgs_cgf": {
+   "eval_n": 100,
+   "eval_schema_pass_rate": 95.0,
+   "eval_commonsense_micro": 86.0,
+   "eval_commonsense_macro": 0.0,
+   "eval_hard_micro": 67.12727272727273,
+   "eval_hard_macro": 1.0,
+   "eval_hard_conditional_micro": 0.0,
+   "eval_hard_conditional_macro": 0.0,
+   "eval_final_pass_rate": 0.0,
+   "eval_tpc_DAV": 0.0,
+   "eval_tpc_ATT": 0.0,
+   "eval_tpc_DDR": 0.0,
+   "eval_tpc_overall": 8.6,
+   "method": "fgs_cgf",
+   "model": "qwen3vl-8b",
+   "n": 100,
+   "seconds": 5216,
+   "errors": 5,
+   "calls": 967,
+   "prompt": 15197731,
+   "completion": 464761
+  },
+  "hermes/direct": {
+   "eval_n": 100,
+   "eval_schema_pass_rate": 98.0,
+   "eval_commonsense_micro": 53.77777777777778,
+   "eval_commonsense_macro": 0.0,
+   "eval_hard_micro": 70.83636363636364,
+   "eval_hard_macro": 0.0,
+   "eval_hard_conditional_micro": 0.0,
+   "eval_hard_conditional_macro": 0.0,
+   "eval_final_pass_rate": 0.0,
+   "eval_tpc_DAV": 0.0,
+   "eval_tpc_ATT": 0.0,
+   "eval_tpc_DDR": 0.0,
+   "eval_tpc_overall": 5.377777777777778,
+   "method": "direct",
+   "model": "hermes3-8b",
+   "n": 100,
+   "seconds": 1297,
+   "errors": 2,
+   "calls": 100,
+   "prompt": 1244465,
+   "completion": 85778
+  },
+  "hermes/staged": {
+   "eval_n": 100,
+   "eval_schema_pass_rate": 88.0,
+   "eval_commonsense_micro": 52.11111111111111,
+   "eval_commonsense_macro": 0.0,
+   "eval_hard_micro": 63.12727272727273,
+   "eval_hard_macro": 2.0,
+   "eval_hard_conditional_micro": 0.0,
+   "eval_hard_conditional_macro": 0.0,
+   "eval_final_pass_rate": 0.0,
+   "eval_tpc_DAV": 0.0,
+   "eval_tpc_ATT": 0.0,
+   "eval_tpc_DDR": 0.0,
+   "eval_tpc_overall": 5.211111111111111,
+   "method": "staged",
+   "model": "hermes3-8b",
+   "n": 100,
+   "seconds": 2560,
+   "errors": 12,
+   "calls": 410,
+   "prompt": 5237626,
+   "completion": 150935
+  },
+  "hermes/check": {
+   "eval_n": 100,
+   "eval_schema_pass_rate": 97.0,
+   "eval_commonsense_micro": 58.88888888888889,
+   "eval_commonsense_macro": 0.0,
+   "eval_hard_micro": 69.23636363636363,
+   "eval_hard_macro": 0.0,
+   "eval_hard_conditional_micro": 0.0,
+   "eval_hard_conditional_macro": 0.0,
+   "eval_final_pass_rate": 0.0,
+   "eval_tpc_DAV": 0.0,
+   "eval_tpc_ATT": 0.0,
+   "eval_tpc_DDR": 0.0,
+   "eval_tpc_overall": 5.888888888888889,
+   "method": "check",
+   "model": "hermes3-8b",
+   "n": 100,
+   "seconds": 4554,
+   "errors": 3,
+   "calls": 391,
+   "prompt": 5249246,
+   "completion": 332386
+  },
+  "hermes/cgf": {
+   "eval_n": 100,
+   "eval_schema_pass_rate": 99.0,
+   "eval_commonsense_micro": 66.74074074074075,
+   "eval_commonsense_macro": 0.0,
+   "eval_hard_micro": 68.2909090909091,
+   "eval_hard_macro": 0.0,
+   "eval_hard_conditional_micro": 0.0,
+   "eval_hard_conditional_macro": 0.0,
+   "eval_final_pass_rate": 0.0,
+   "eval_tpc_DAV": 0.0,
+   "eval_tpc_ATT": 0.0,
+   "eval_tpc_DDR": 0.0,
+   "eval_tpc_overall": 6.674074074074075,
+   "method": "cgf",
+   "model": "hermes3-8b",
+   "n": 100,
+   "seconds": 4261,
+   "errors": 1,
+   "calls": 395,
+   "prompt": 5539883,
+   "completion": 338076
+  },
+  "hermes/cgf_unranked": {
+   "eval_n": 100,
+   "eval_schema_pass_rate": 98.0,
+   "eval_commonsense_micro": 64.74074074074075,
+   "eval_commonsense_macro": 0.0,
+   "eval_hard_micro": 66.32727272727273,
+   "eval_hard_macro": 0.0,
+   "eval_hard_conditional_micro": 0.0,
+   "eval_hard_conditional_macro": 0.0,
+   "eval_final_pass_rate": 0.0,
+   "eval_tpc_DAV": 0.0,
+   "eval_tpc_ATT": 0.0,
+   "eval_tpc_DDR": 0.0,
+   "eval_tpc_overall": 6.474074074074075,
+   "method": "cgf_unranked",
+   "model": "hermes3-8b",
+   "n": 100,
+   "seconds": 4736,
+   "errors": 2,
+   "calls": 392,
+   "prompt": 5437353,
+   "completion": 330145
+  },
+  "hermes/fgs_cgf": {
+   "eval_n": 100,
+   "eval_schema_pass_rate": 92.0,
+   "eval_commonsense_micro": 71.0,
+   "eval_commonsense_macro": 0.0,
+   "eval_hard_micro": 59.199999999999996,
+   "eval_hard_macro": 0.0,
+   "eval_hard_conditional_micro": 0.0,
+   "eval_hard_conditional_macro": 0.0,
+   "eval_final_pass_rate": 0.0,
+   "eval_tpc_DAV": 0.0,
+   "eval_tpc_ATT": 0.0,
+   "eval_tpc_DDR": 0.0,
+   "eval_tpc_overall": 7.1000000000000005,
+   "method": "fgs_cgf",
+   "model": "hermes3-8b",
+   "n": 100,
+   "seconds": 6543,
+   "errors": 8,
+   "calls": 1106,
+   "prompt": 15052036,
+   "completion": 500086
+  }
+ },
+ "fgs": {
+  "TravelPlanner/q35": {
+   "n": 180,
+   "cgf": 25.0,
+   "fgs": 25.0,
+   "b": 11,
+   "c": 11,
+   "p": 1.0
+  },
+  "meeting/q35": {
+   "n": 1000,
+   "cgf": 47.3,
+   "fgs": 43.9,
+   "b": 127,
+   "c": 93,
+   "p": 0.025866356135032062
+  },
+  "trip/q35": {
+   "n": 1600,
+   "cgf": 39.31,
+   "fgs": 36.62,
+   "b": 160,
+   "c": 117,
+   "p": 0.011483101682460061
+  },
+  "TravelPlanner/qvl": {
+   "n": 180,
+   "cgf": 32.22,
+   "fgs": 33.33,
+   "b": 11,
+   "c": 13,
+   "p": 0.8388197422027588
+  },
+  "meeting/qvl": {
+   "n": 1000,
+   "cgf": 35.9,
+   "fgs": 42.6,
+   "b": 75,
+   "c": 142,
+   "p": 6.351396455890197e-06
+  },
+  "trip/qvl": {
+   "n": 1600,
+   "cgf": 26.0,
+   "fgs": 26.88,
+   "b": 109,
+   "c": 123,
+   "p": 0.3934338045986188
+  },
+  "TravelPlanner/hermes": {
+   "n": 180,
+   "cgf": 6.67,
+   "fgs": 7.78,
+   "b": 5,
+   "c": 7,
+   "p": 0.7744140625
+  },
+  "meeting/hermes": {
+   "n": 1000,
+   "cgf": 21.5,
+   "fgs": 33.4,
+   "b": 33,
+   "c": 152,
+   "p": 1.877526744629288e-19
+  },
+  "trip/hermes": {
+   "n": 1600,
+   "cgf": 17.0,
+   "fgs": 18.62,
+   "b": 81,
+   "c": 107,
+   "p": 0.06797106090165464
+  },
+  "_pooled": {
+   "b": 612,
+   "c": 765,
+   "p": 4.1299684196291866e-05,
+   "settings": 9
+  }
+ },
+ "ct_paired": {
+  "q35/direct->staged/cs": {
+   "b_better": 32,
+   "b_worse": 51,
+   "p": 0.04752488925653181
+  },
+  "q35/direct->staged/hard": {
+   "b_better": 26,
+   "b_worse": 40,
+   "p": 0.1088569644097161
+  },
+  "q35/check->cgf/cs": {
+   "b_better": 42,
+   "b_worse": 16,
+   "p": 0.0008617822405421263
+  },
+  "q35/check->cgf/hard": {
+   "b_better": 28,
+   "b_worse": 23,
+   "p": 0.5758493477318467
+  },
+  "q35/cgf->cgf_unranked/cs": {
+   "b_better": 33,
+   "b_worse": 31,
+   "p": 0.9006532462520331
+  },
+  "q35/cgf->cgf_unranked/hard": {
+   "b_better": 28,
+   "b_worse": 36,
+   "p": 0.38173279479333766
+  },
+  "q35/direct->cgf/cs": {
+   "b_better": 56,
+   "b_worse": 14,
+   "p": 4.3028401315359276e-07
+  },
+  "q35/direct->cgf/hard": {
+   "b_better": 25,
+   "b_worse": 25,
+   "p": 1.0
+  },
+  "q35/cgf->fgs_cgf/cs": {
+   "b_better": 37,
+   "b_worse": 39,
+   "p": 0.9087769252754921
+  },
+  "q35/cgf->fgs_cgf/hard": {
+   "b_better": 26,
+   "b_worse": 49,
+   "p": 0.010582117051705276
+  },
+  "q35/direct->check/cs": {
+   "b_better": 37,
+   "b_worse": 21,
+   "p": 0.04794032407166697
+  },
+  "q35/direct->check/hard": {
+   "b_better": 15,
+   "b_worse": 25,
+   "p": 0.1538599441628321
+  },
+  "qvl/direct->staged/cs": {
+   "b_better": 56,
+   "b_worse": 29,
+   "p": 0.004511640408355218
+  },
+  "qvl/direct->staged/hard": {
+   "b_better": 27,
+   "b_worse": 42,
+   "p": 0.09118649056701152
+  },
+  "qvl/check->cgf/cs": {
+   "b_better": 63,
+   "b_worse": 13,
+   "p": 5.044923721823652e-09
+  },
+  "qvl/check->cgf/hard": {
+   "b_better": 21,
+   "b_worse": 35,
+   "p": 0.08142681460950621
+  },
+  "qvl/cgf->cgf_unranked/cs": {
+   "b_better": 34,
+   "b_worse": 41,
+   "p": 0.48868297090314333
+  },
+  "qvl/cgf->cgf_unranked/hard": {
+   "b_better": 27,
+   "b_worse": 23,
+   "p": 0.6718110337653656
+  },
+  "qvl/direct->cgf/cs": {
+   "b_better": 65,
+   "b_worse": 18,
+   "p": 2.1054542433593654e-07
+  },
+  "qvl/direct->cgf/hard": {
+   "b_better": 17,
+   "b_worse": 38,
+   "p": 0.006455803109956637
+  },
+  "qvl/cgf->fgs_cgf/cs": {
+   "b_better": 65,
+   "b_worse": 23,
+   "p": 8.50110761369032e-06
+  },
+  "qvl/cgf->fgs_cgf/hard": {
+   "b_better": 30,
+   "b_worse": 44,
+   "p": 0.13017768031912763
+  },
+  "qvl/direct->check/cs": {
+   "b_better": 36,
+   "b_worse": 21,
+   "p": 0.0627366803558285
+  },
+  "qvl/direct->check/hard": {
+   "b_better": 16,
+   "b_worse": 23,
+   "p": 0.3367836351899314
+  },
+  "hermes/direct->staged/cs": {
+   "b_better": 48,
+   "b_worse": 42,
+   "p": 0.5984117182335187
+  },
+  "hermes/direct->staged/hard": {
+   "b_better": 31,
+   "b_worse": 48,
+   "p": 0.07116340869529117
+  },
+  "hermes/check->cgf/cs": {
+   "b_better": 58,
+   "b_worse": 26,
+   "p": 0.0006279472715818218
+  },
+  "hermes/check->cgf/hard": {
+   "b_better": 26,
+   "b_worse": 45,
+   "p": 0.03192716208321237
+  },
+  "hermes/cgf->cgf_unranked/cs": {
+   "b_better": 38,
+   "b_worse": 40,
+   "p": 0.9099464518745243
+  },
+  "hermes/cgf->cgf_unranked/hard": {
+   "b_better": 27,
+   "b_worse": 38,
+   "p": 0.21453919400817845
+  },
+  "hermes/direct->cgf/cs": {
+   "b_better": 71,
+   "b_worse": 15,
+   "p": 7.076057190944837e-10
+  },
+  "hermes/direct->cgf/hard": {
+   "b_better": 21,
+   "b_worse": 47,
+   "p": 0.0021862431776861705
+  },
+  "hermes/cgf->fgs_cgf/cs": {
+   "b_better": 58,
+   "b_worse": 30,
+   "p": 0.0037465093469812296
+  },
+  "hermes/cgf->fgs_cgf/hard": {
+   "b_better": 25,
+   "b_worse": 55,
+   "p": 0.0010527348573533444
+  },
+  "hermes/direct->check/cs": {
+   "b_better": 47,
+   "b_worse": 20,
+   "p": 0.0013071686857636005
+  },
+  "hermes/direct->check/hard": {
+   "b_better": 23,
+   "b_worse": 38,
+   "p": 0.07217743850092258
+  }
+ }
+}
