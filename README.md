@@ -216,7 +216,6 @@ python analysis/gen_tables.py results/aggregate.json tables/            # 📋 L
 
 ---
 
-
 ## 📝 Citation
 
 ```bibtex
