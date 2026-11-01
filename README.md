@@ -16,6 +16,7 @@
 
 <p align="center">
   🗺️ <a href="#-tldr">TL;DR</a> ·
+  ⚡ <a href="#-quick-start">Quick start</a> ·
   🍬 <a href="#-how-cgf-works">How it works</a> ·
   🏆 <a href="#-results">Results</a> ·
   🛠️ <a href="#%EF%B8%8F-setup">Setup</a> ·
@@ -28,10 +29,23 @@
 
 ## 🌟 TL;DR
 
-- 🧳 **The problem.** Multi-day itineraries, meeting schedules and multi-city trips bundle many interacting constraints (grounding, opening hours, non-repetition, minimum stays, budgets, travel times, flight networks…). Open 8–9B models fail them all the time.
-- 🪜 **Staging is not the fix.** Feeding the *same* information one sub-task at a time never raises strict success and loses constraints that span stages (repeated restaurants, stays that no longer add up to the trip length).
+- 🧳 **The problem.** Multi-day itineraries, meeting schedules and multi-city trips bundle many interacting constraints (grounding, opening hours, non-repetition, minimum stays, budgets, travel times, flight networks…). Open 8–9B models often fail them.
+- 🪜 **Staging is not the fix.** Feeding the *same* information one sub-task at a time on its own never raises strict success and loses constraints that span stages (repeated restaurants, stays that no longer add up to the trip length).
 - 🍭 **CGF is.** *Constructive grounded feedback* is a training-free **check → suggest → revise** loop: a checker verifies every plan item against the environment's own data, and each violation comes with **filtered, cost-ranked feasible replacements**. It beats violation-only feedback in every model–task setting at about the same number of model calls.
-- 🔬 **Why it works.** Where the constraints define a feasible set (TravelPlanner, calendar scheduling), random candidate lists of the same size from the same pool do **not** help. The gain comes from filtering and ranking, i.e. from doing the search that a small model does not do reliably in context.
+- 🔬 **Why it works.** Where the constraints define a feasible set (TravelPlanner, calendar scheduling), random candidate lists of the same size from the same pool do **not** help. There the gain comes from filtering and ranking, i.e. from doing the search that a small model does not do reliably in context.
+
+---
+
+## ⚡ Quick start
+
+One command reproduces **+CGF on NATURAL PLAN calendar scheduling with Qwen3.5-9B (82.7 % in the results table)**: it fetches the tasks, serves the model with vLLM, runs all 1,000 tasks and compares every task with the released plans.
+
+```bash
+pip install absl-py "vllm==0.17.1"
+python quickstart.py        # one GPU with ≥ 24 GB; on two 16 GB GPUs add --tp 2 --vllm-args="--language-model-only --gpu-memory-utilization 0.85"
+```
+
+On 2× RTX 4080 it takes about 45 minutes and gives **83.5 % (paper: 82.7 %)**, with the same outcome on 958 of 1,000 tasks (exact McNemar p = 0.28; a second run gave 82.8 %). `--limit 100` runs the first 100 tasks in about 8 minutes; `python quickstart.py --help` lists all options. No GPU? [Rebuild every number from the released plans](#-released-plans--reproducing-every-number).
 
 ---
 
@@ -88,8 +102,8 @@ Strict success (%) on TravelPlanner and NATURAL PLAN, commonsense micro pass rat
 
 - 🥇 Among Direct, Staged, +Check and +CGF, **+CGF scores highest in all 15 model–task settings**.
 - 📈 Pooled over the 12 settings with a strict metric, +CGF solves **965** tasks that +Check misses against **381** the other way (exact McNemar, p ≈ 1×10⁻⁵⁸).
-- 🎲 Random candidates (`+CGF, unranked`) stay near +Check on TravelPlanner and fall below it on calendar scheduling, so the gain comes from **filtering and ranking**.
-- 🪜 Gating every stage with CGF (FGS+CGF) helps on some settings and hurts on others, at 9.6–14.0 instead of 2.9–4.0 model calls per task.
+- 🎲 Random candidates (`+CGF, unranked`) stay near +Check on TravelPlanner and fall below it on calendar scheduling, so in these settings the gain comes from **filtering and ranking**.
+- 🪜 Gating every stage with CGF (FGS+CGF) beats +CGF pooled over the nine staged settings (p = 4×10⁻⁵), but unevenly (it loses on meetings and trips for Qwen3.5-9B), at 9.6–14.0 instead of 2.9–4.0 model calls per task.
 
 <p align="center">
   <img src="assets/figures/fig2_tp_failures.png" width="80%" alt="Fig. 2: TravelPlanner plans failing each constraint"/>
@@ -124,7 +138,8 @@ constructive-grounded-feedback/
 ├── 📦 results/
 │   ├── aggregate.json         all numbers reported in the paper
 │   └── runs.tar.xz            every plan, log and score behind them
-└── 🖼️ assets/figures/         Fig. 1 and Fig. 2 from the paper
+├── 🖼️ assets/figures/         Fig. 1 and Fig. 2 from the paper
+└── ⚡ quickstart.py           one-command reproduction of one result (see Quick start)
 ```
 
 ---
@@ -140,7 +155,9 @@ pip install -r requirements.txt
 mkdir -p third_party && cd third_party
 git clone https://github.com/OSU-NLP-Group/TravelPlanner      # + download its database/ as described in its README
 git clone https://github.com/google-deepmind/natural-plan
-git clone https://github.com/LAMDASZ-ML/ChinaTravel           # English sandbox (database_en)
+git clone https://github.com/LAMDASZ-ML/ChinaTravel           # + download its English sandbox (database_en) as described in its README
+# ChinaTravel: the 100 English phase-2 test queries
+curl -L --create-dirs -o ChinaTravel_phase2/competition_test.csv https://huggingface.co/datasets/LAMDA-NeSy/ChinaTravel/resolve/a7d893afb628af6ca181625b6c7cca2d60a6bccb/phase2/competition_test.csv
 cd ..
 ```
 
@@ -188,7 +205,7 @@ python ct/ct_ref.py --dump_dir ct/refs                                  # build 
 python ct/ct_run.py --method cgf --model qwen3.5-9b --ports 8000 --out runs/chinatravel/q35/cgf
 ```
 
-💡 Swap `--method` for any name in the [methods table](#-methods-compared). Every run writes the plans plus a `.meta.json` with the number of model calls and tokens.
+💡 Swap `--method` for any name in the [methods table](#-methods-compared); on NATURAL PLAN, `staged` and `fgs_cgf` run with `np/np_staged.py` (meeting and trip only), the other methods with `np/np_run.py`. Every run writes the plans plus a `.meta.json` with the number of model calls and tokens.
 
 ---
 
@@ -198,7 +215,7 @@ python ct/ct_run.py --method cgf --model qwen3.5-9b --ports 8000 --out runs/chin
 
 ```bash
 tar -xJf results/runs.tar.xz -C results/
-python analysis/aggregate.py > results/aggregate.json                   # ✅ identical to the shipped file
+python analysis/aggregate.py | cmp - results/aggregate.json && echo identical   # ✅ same as the shipped file
 python tp/paired.py direct_repair direct_cgf final                      # 🧮 McNemar: 3 vs 32 (Qwen3.5-9B)
 SUB=qvl python tp/paired.py direct_repair direct_cgf final              # 🧮 1 vs 42 (Qwen3-VL-8B)
 python analysis/gen_tables.py results/aggregate.json tables/            # 📋 LaTeX table rows
