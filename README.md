@@ -60,7 +60,7 @@ pip install absl-py "vllm==0.17.1"
 python quickstart.py --limit 100
 ```
 
-**3️⃣ All 1,000 tasks, about 45 minutes.** `python quickstart.py` reproduces **+CGF on NATURAL PLAN calendar scheduling with Qwen3.5-9B (82.7 % in the results table)**. On 2× RTX 4080 it gave **83.5 %**, with the same outcome on 958 of 1,000 tasks (exact McNemar p = 0.28; a second run gave 82.8 %).
+**3️⃣ All 1,000 tasks, about 45 minutes.** `python quickstart.py` reproduces **+CGF on NATURAL PLAN calendar scheduling with Qwen3.5-9B (82.7 % in the results table)**. Our rerun gave **83.5 %**, with the same outcome on 958 of 1,000 tasks (exact McNemar p = 0.28; a second run gave 82.8 %).
 
 On two 16 GB GPUs add `--tp 2 --vllm-args="--language-model-only --gpu-memory-utilization 0.85"`; `python quickstart.py --help` lists all options. The first run downloads the model (about 18 GB).
 
