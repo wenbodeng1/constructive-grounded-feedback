@@ -314,7 +314,7 @@ def main():
     if todo:
         step(3, 'model server')
         with Server(a, outdir / f'vllm{suffix}.log') as server:
-            step(4, f'running {", ".join(METHODS[m] for m in todo)} on {n} tasks (2x RTX 4080: about 4 min per 100 tasks for +CGF)')
+            step(4, f'running {", ".join(METHODS[m] for m in todo)} on {n} tasks')
             for m in todo: run_method(a, m, outs[m], server)
     else: step(3, 'model server: not needed'); step(4, 'run: not needed')
 
