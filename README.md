@@ -38,14 +38,31 @@
 
 ## ⚡ Quick start
 
-One command reproduces **+CGF on NATURAL PLAN calendar scheduling with Qwen3.5-9B (82.7 % in the results table)**: it fetches the tasks, serves the model with vLLM, runs all 1,000 tasks and compares every task with the released plans.
+Three levels, from any laptop to a full rerun. All start from a clone:
+
+```bash
+git clone https://github.com/wenbodeng1/constructive-grounded-feedback
+cd constructive-grounded-feedback
+```
+
+**1️⃣ No GPU, about a minute.** Rebuild every number in the paper from the released plans (plain Python, nothing to install):
+
+```bash
+tar -xJf results/runs.tar.xz -C results/
+python analysis/aggregate.py | cmp - results/aggregate.json && echo identical
+python tp/paired.py direct_repair direct_cgf final   # +Check 16 vs +CGF 45 (of 180)
+```
+
+**2️⃣ One GPU with ≥ 24 GB, about 10 minutes.** Rerun +CGF with Qwen3.5-9B on the first 100 NATURAL PLAN calendar tasks and compare every task with the released plans (paper: 90.0 %; our three runs: 89.0–90.0 %):
 
 ```bash
 pip install absl-py "vllm==0.17.1"
-python quickstart.py        # one GPU with ≥ 24 GB; on two 16 GB GPUs add --tp 2 --vllm-args="--language-model-only --gpu-memory-utilization 0.85"
+python quickstart.py --limit 100
 ```
 
-On 2× RTX 4080 it takes about 45 minutes and gives **83.5 % (paper: 82.7 %)**, with the same outcome on 958 of 1,000 tasks (exact McNemar p = 0.28; a second run gave 82.8 %). `--limit 100` runs the first 100 tasks in about 8 minutes; `python quickstart.py --help` lists all options. No GPU? [Rebuild every number from the released plans](#-released-plans--reproducing-every-number).
+**3️⃣ All 1,000 tasks, about 45 minutes.** `python quickstart.py` reproduces **+CGF on NATURAL PLAN calendar scheduling with Qwen3.5-9B (82.7 % in the results table)**. On 2× RTX 4080 it gave **83.5 %**, with the same outcome on 958 of 1,000 tasks (exact McNemar p = 0.28; a second run gave 82.8 %).
+
+On two 16 GB GPUs add `--tp 2 --vllm-args="--language-model-only --gpu-memory-utilization 0.85"`; `python quickstart.py --help` lists all options. The first run downloads the model (about 18 GB).
 
 ---
 
